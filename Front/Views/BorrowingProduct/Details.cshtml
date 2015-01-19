@@ -1,0 +1,126 @@
+﻿<!-- 
+  author：wind
+  time: 2015-01-05
+  name: 信通中国 微信官网开发项目
+ -->
+@{
+    ViewBag.Title = "信通中国-借款详情";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Menu=2;
+}
+
+@* 应用页面的样式 *@
+@section link{
+  <link rel="stylesheet" href="../../Content/css/owl.carousel.css">
+  <link rel="stylesheet" href="../../Content/css/owl.theme.css">
+  <link rel="stylesheet" href="../../Content/css/manage.css">
+}
+@* 应用页面的样式 *@
+
+
+@* page 代码的主体内容 *@
+<div class="wrapper">
+  <div id="borrow_detail">
+    <div class="md-earnings"> <b>@ViewBag.data.Name</b>
+      @ViewBag.data.SimpleDesc
+    </div>
+    <div class="pure-g bg-white bd-manage-padding">
+      <div class="pure-u-2-5 bd-much-outer">
+        <h3>放款额度</h3>
+        <p class="how-much">@ViewBag.data.CreditLine<i>万</i>
+        </p>
+      </div>
+      <div class="pure-u-3-5">
+        <div class="tip-list">
+          <label class="theme01">快捷</label>
+          <div class="text">申请简单快捷</div>
+        </div>
+        <div class="tip-list">
+          <label class="theme02">方便</label>
+          <div class="text">利率低、无抵押</div>
+        </div>
+        <div class="tip-list">
+          <label class="theme03">灵活</label>
+          <div class="text">还款期限灵活</div>
+        </div>
+        <div class="tip-list">
+          <label class="theme04">简单</label>
+          <div class="text">4步轻松搞定</div>
+        </div>
+      </div>
+    </div>
+    <div class="bd-content">
+      <div class="bd-content-list">
+        <label class="icon icon-peoples"></label>
+        <div class="text">
+          <h3 class="bd-content-title">适用人群</h3>
+          <p class="bd-content-text">
+            @ViewBag.data.SuitCrowd
+          </p>
+        </div>
+      </div>
+      <div class="bd-content-list">
+        <label class="icon icon-files"></label>
+        <div class="text">
+          <h3 class="bd-content-title">提供资料</h3>
+          <p class="bd-content-text">
+            @ViewBag.data.OfferData
+          </p>
+        </div>
+      </div>
+      <div class="bd-content-list">
+        <label class="icon icon-flow"></label>
+        <div class="text">
+          <h3 class="bd-content-title">申请流程</h3>
+          <p class="bd-content-text">
+            @ViewBag.data.ApplyProcess
+           <!--  <span class="bd-flow-item">提交资料</span>
+           <i class="iconfont icon-iconfonticonfontxiangyou"></i>
+           <span class="bd-flow-item">资料审核</span>
+           <i class="iconfont icon-iconfonticonfontxiangyou"></i>
+           <span class="bd-flow-item">合同签署</span>
+           <i class="iconfont icon-iconfonticonfontxiangyou"></i>
+           <span class="bd-flow-item">放款</span> -->
+          </p>
+        </div>
+      </div>
+      <div class="button-row">
+        <button class="btn btn-block btn-active-style">在线预约</button>
+      </div>
+    </div>
+    <div class="others-products bg-white">
+      <h3 class="op-title">更多产品推荐</h3>
+      <div class="box">
+        <div class="p-control"><a id="prev" class="iconfont icon-xiangyou rotate180"></a><a id="next" class="iconfont icon-xiangyou"></a></div>
+        <div id="others_products_list" class="p-list">
+          <div class="item">
+            <div class="p-item"><span class="name">季丰</span><span class="earnings">年化收益 8%</span></div>
+          </div>
+          <div class="item">
+            <div class="p-item"><span class="name">季丰</span><span class="earnings">年化收益 8%</span></div>
+          </div>
+          <div class="item">
+            <div class="p-item"><span class="name">季丰</span><span class="earnings">年化收益 8%</span></div>
+          </div>
+          <div class="item">
+            <div class="p-item"><span class="name">季丰</span><span class="earnings">年化收益 8%</span></div>
+          </div>
+          <div class="item">
+            <div class="p-item"><span class="name">季丰</span><span class="earnings">年化收益 8%</span></div>
+          </div>
+          <div class="item">
+            <div class="p-item"><span class="name">季丰</span><span class="earnings">年化收益 8%</span></div>
+          </div>
+          <div class="item">
+            <div class="p-item"><span class="name">季丰</span><span class="earnings">年化收益 8%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@* page 代码的主体内容 *@
+
+@section scripts{
+<script src="~/Scripts/js/require.js" data-main="../../Scripts/js/xin_borrow_detail.js"></script>
+}

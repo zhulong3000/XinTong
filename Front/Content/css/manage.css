@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/* index */
+/* -------------------------------------------------------------
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+
+------------------------------------------------------------- */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+.md-sim-intr-item:before, .tip-list:before, .bd-content-list:before, .md-sim-intr-item:after, .tip-list:after, .bd-content-list:after {
+  content: " ";
+  display: table;
+}
+.md-sim-intr-item:after, .tip-list:after, .bd-content-list:after {
+  clear: both;
+}
+
+.manage-padding, .md-earnings, .md-simple-intr, .md-intr-item, .button-row, .bd-manage-padding, .bd-content {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.manage-padding, .md-earnings, .md-simple-intr, .md-intr-item, .button-row, .bd-manage-padding, .bd-content {
+  padding: 0 0.75rem;
+}
+
+.md-earnings {
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-size: 0.9rem;
+  background: #a98667;
+  color: #fff;
+}
+.md-earnings i {
+  font-size: 1.1rem;
+  font-style: normal;
+}
+
+.md-simple-intr {
+  padding-top: 0.75rem;
+  padding-bottom: 1.5rem;
+}
+
+.md-sim-intr-item {
+  padding: 0.25rem 0;
+  line-height: 1rem;
+}
+.md-sim-intr-item label {
+  color: #fff;
+  display: block;
+  float: left;
+  width: 3rem;
+  text-align: center;
+  font-size: 0.6rem;
+}
+.md-sim-intr-item label.theme01 {
+  background: #20b5d2;
+}
+.md-sim-intr-item label.theme02 {
+  background: #f39801;
+}
+.md-sim-intr-item label.theme03 {
+  background: #a9460f;
+}
+.md-sim-intr-item .text {
+  display: block;
+  margin-left: 3.5rem;
+  color: #8e8a83;
+  font-size: 0.7rem;
+}
+
+.md-intr-item {
+  border-top: 1px solid #a89e85;
+}
+
+.md-intr-item-title {
+  position: absolute;
+  top: -1.1rem;
+  left: 0.75rem;
+  width: 4.25rem;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  color: #fff;
+  text-align: center;
+  background: url(../images/md_item_title_bg.png) left top no-repeat;
+  background-size: 4.25rem auto;
+}
+.md-intr-item-title span {
+  display: block;
+  width: 3.75rem;
+}
+
+.md-intr-item-text {
+  position: relative;
+  line-height: 1.5;
+  font-size: 0.7rem;
+  color: #8e8a83;
+  padding-top: 1rem;
+}
+
+.md-intr-item-table table {
+  width: 100%;
+  text-align: center;
+  border-color: #8a4627;
+  color: #8a4627;
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+.md-intr-item-table tbody tr:nth-child(2n) {
+  background: #def3f8;
+}
+
+.button-row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* 借款css borrow detail */
+.bd-manage-padding {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.bd-much-outer h3 {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0.25rem 0;
+  color: #8e8a83;
+}
+.bd-much-outer .how-much {
+  color: #e9432d;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 2;
+}
+.bd-much-outer .how-much i {
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.tip-list {
+  line-height: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.tip-list label {
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 0.6rem;
+  width: 1.5rem;
+  text-align: center;
+}
+.tip-list label.theme01 {
+  background: #20b5d2;
+}
+.tip-list label.theme02 {
+  background: #e9432d;
+}
+.tip-list label.theme03 {
+  background: #f39801;
+}
+.tip-list label.theme04 {
+  background: #a9460f;
+}
+.tip-list .text {
+  font-size: 0.7rem;
+  color: #8e8a83;
+  margin-left: 2rem;
+}
+
+.bd-content {
+  border-top: 1px solid #a89e85;
+  border-bottom: 1px solid #a89e85;
+}
+.bd-content .button-row {
+  padding: 0 0 1rem 0;
+}
+
+.bd-content-list {
+  padding: 0.75rem 0;
+}
+.bd-content-list label.icon {
+  display: block;
+  float: left;
+  width: 1.5rem;
+}
+.bd-content-list .text {
+  display: block;
+  margin-left: 2rem;
+}
+.bd-content-list .iconfont {
+  color: #75391d;
+}
+
+.bd-content-title {
+  font-size: 0.8rem;
+  color: #75391d;
+  font-weight: 500;
+  line-height: 2;
+  margin: 0;
+}
+
+.bd-content-text {
+  font-size: 0.7rem;
+  color: #8e8a83;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/*# sourceMappingURL=manage.css.map */

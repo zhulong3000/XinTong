@@ -1,0 +1,80 @@
+﻿<!-- 
+  author：wind
+  time: 2015-01-05
+  name: 信通中国 微信官网开发项目
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <title>@ViewBag.Title</title>
+  <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" media="screen">
+  <link rel="stylesheet" href="../../Content/css/pure-min.css">
+  <link rel="stylesheet" href="../../Content/css/common.css">
+  @RenderSection("link",required:false)
+  </head>
+  <body>
+    <div class="page main-bg" style="padding-top:0;">
+      <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clearfix">@RenderBody()</section>
+      </div>
+      <footer>
+        @{
+          string Menu0 ="",
+              Menu1 ="",
+              Menu2 ="", 
+              Menu3 = "";
+          if (ViewBag.Menu == 0)
+          {
+              Menu0 = "active";
+          }
+          else if (ViewBag.Menu == 1)
+          {
+              Menu1 = "active";
+          }
+          else if (ViewBag.Menu == 2)
+          {
+              Menu2 = "active";
+          }
+          else if (ViewBag.Menu == 3)
+          {
+              Menu3 = "active";
+          }else{
+              
+          }
+        }
+        <div class="footer">
+          <ul class="tool-nav-list pure-g">
+            <li class="nav-item pure-u-1-4">
+              <a href="../Home/Index" class="link @Menu0"> <i class="icon icon-main"></i>
+                <span class="text">首页</span>
+              </a>
+            </li>
+            <li class="nav-item pure-u-1-4">
+              <a href="../FinanceProduct/List" class="link @Menu1"> <i class="icon icon-flicai"></i>
+                <span class="text">理财</span>
+              </a>
+            </li>
+            <li class="nav-item pure-u-1-4">
+              <a href="../BorrowingProduct/List" class="link @Menu2">
+                <i class="icon icon-fjiekuan"></i>
+                <span class="text">借款</span>
+              </a>
+            </li>
+            <li class="nav-item pure-u-1-4">
+              <a href="../Network/Index" class="link @Menu3">
+                <i class="icon icon-phone"></i>
+                <span class="text">电话</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      @Scripts.Render("~/bundles/jquery")
+      @RenderSection("scripts", required: false)
+    </div>
+  </body>
+</html>

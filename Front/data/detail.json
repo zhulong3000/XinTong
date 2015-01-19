@@ -1,0 +1,21 @@
+{
+  "ID": 9,
+  "Name": "业主借",
+  "SimpleDesc": " 有房一族的福音，最长期限长达36个月",
+  "CreditLine": "1-6万",
+  "ModeFeature": "1、利率低；2、无抵押；3、还款期限灵活；4、申请简单快捷；",
+  "SuitCrowd": "在借款管辖区有自己名下的房产，并在当地居住满半年且有固定工作或经营行为的人士。",
+  "OfferData": "二代身份证、房产地址下带有申请者（产权人之一）姓名的有效单据（如：燃气单、水电单等）、近6个月的个人常用银行流水、（购房合同、购房发票、房屋所有权证、按揭合同、抵押合同）中的任意一项，有按揭的情况下，需要还款3期以上。",
+  "ApplyProcess": "提交资料 → 资料审核 → 合同签署 → 放款",
+  "CreateOn": "2015-01-11 21:59:01",
+  "EntityState": 2,
+  "EntityKey": {
+    "EntitySetName": "borrowingproduct",
+    "EntityContainerName": "testEntities",
+    "EntityKeyValues": [{
+      "Key": "ID",
+      "Value": 9
+    }],
+    "IsTemporary": false
+  }
+}

@@ -1,0 +1,314 @@
+/* index */
+/* -------------------------------------------------------------
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+
+------------------------------------------------------------- */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+.xin-center-content, .center-img-bg {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.input-error-info {
+  min-height: 2rem;
+  line-height: 1rem;
+  color: red;
+  font-size: 0.6rem;
+  padding: 5px;
+}
+
+.input-wrapper-login {
+  border: 1px solid #a89e85;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.user-list-row {
+  /* register */
+}
+.user-list-row .field {
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+.user-list-row.p-l {
+  position: relative;
+  padding-left: 2rem;
+}
+.user-list-row.p-l .icon {
+  position: absolute;
+  top: 0;
+  left: 0.25rem;
+}
+.user-list-row.p-l .icon-member,
+.user-list-row.p-l .icon-password {
+  border-right: 1px solid #a89e85;
+}
+.user-list-row.p-r {
+  padding-right: 0.25rem;
+}
+.user-list-row.m-tb {
+  margin: 0.5rem 0;
+}
+.user-list-row .u-input {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  border: none;
+  font-size: 0.7rem;
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.user-list-row .u-text-input {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  border: 1px solid #a89e85;
+  font-size: 0.7rem;
+  padding: 0.25rem;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.user-list-row .u-text-input.u-input-small {
+  display: inline-block;
+  width: 30%;
+}
+.user-list-row.bb {
+  border-bottom: 1px solid #a89e85;
+}
+.user-list-row .normal {
+  font-size: 0.6rem;
+  color: #8e8a83;
+}
+.user-list-row.padding-label {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 4rem;
+}
+.user-list-row.padding-label label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  text-align: right;
+  color: #75391d;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+.user-list-row .link.role {
+  display: inline-block;
+  width: 3rem;
+  height: 0.9rem;
+  margin: 0 0.5rem;
+  color: #8e8a83;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 0.9rem;
+  background: transparent url(../images/tab_bg.png) no-repeat;
+  background-position: 0 -1.05rem;
+  background-size: 3rem auto;
+}
+.user-list-row .link.role.checked {
+  color: #75391d;
+  background-position: 0 0;
+}
+.user-list-row .agree-checkbox {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+  left: 0.25rem;
+  z-index: 10;
+}
+.user-list-row .agree-checkbox:checked + .icon {
+  position: relative;
+  left: 0.5rem;
+  background-position: -4.5rem -1.5rem;
+}
+.user-list-row .agree-checkbox + .icon {
+  position: relative;
+  left: 0.5rem;
+  background-position: -6rem -1.5rem;
+}
+.user-list-row .agree-rules {
+  display: inline-block;
+  color: #8e8a83;
+  font-size: 0.5rem;
+}
+.user-list-row .agree-rules .link {
+  color: #75391d;
+}
+
+.other-operate {
+  position: relative;
+  padding: 0.5rem 0;
+}
+.other-operate .link {
+  font-size: 0.7rem;
+  color: #75391d;
+}
+
+/* user center */
+.xin-center-content {
+  margin: 0.5rem;
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  -moz-box-shadow: 0 2px 4px #d6d6c6;
+  -webkit-box-shadow: 0 2px 4px #d6d6c6;
+  box-shadow: 0 2px 4px #d6d6c6;
+}
+
+.center-user-info {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0.5rem;
+  text-align: center;
+}
+.center-user-info .photo {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 0.2rem solid rgba(0, 0, 0, 0.4);
+}
+.center-user-info .name {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+.center-user-info .add {
+  font-size: 0.7rem;
+  color: #8e8a83;
+}
+.center-user-info .add i {
+  color: #85d2c5;
+}
+
+.account-value {
+  position: relative;
+  padding: 0.5rem 0;
+}
+.account-value span {
+  display: block;
+  font-size: 0.8rem;
+}
+.account-value .inner {
+  text-align: center;
+  color: #8e8a83;
+}
+.account-value .inner .name {
+  padding: 0.25rem 0;
+}
+.account-value .inner .value {
+  font-weight: 500;
+  color: #b73038;
+}
+.account-value .inner.border-lr {
+  border-left: 1px solid #a89e85;
+  border-right: 1px solid #a89e85;
+}
+
+.center-bar {
+  position: relative;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  padding-left: 5rem;
+  border-top: 1px solid #a89e85;
+  background: #fff;
+}
+.center-bar .link {
+  display: block;
+}
+.center-bar label {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #74706a;
+  text-indent: 0.75rem;
+}
+.center-bar .field {
+  color: #333333;
+  font-size: 0.7rem;
+  color: rgba(142, 138, 131, 0.75);
+}
+.center-bar.title {
+  padding-left: 0;
+  font-size: 0.8rem;
+  text-indent: 0.75rem;
+  color: #75391d;
+  background: transparent;
+}
+.center-bar .iconfont {
+  color: #75391d;
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
+
+.appointment-content {
+  padding: 1rem 0.75rem 0;
+}
+
+#submit_apply {
+  margin-top: 2.5rem;
+}
+
+/*# sourceMappingURL=user.css.map */

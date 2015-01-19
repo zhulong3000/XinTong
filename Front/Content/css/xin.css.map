@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,cAAc;EACZ,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,aAAa;;AACtB,oBAAK;EACH,SAAS,EAAE,aAAa;;;AAU1B,iBAAK;EACH,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,aAAa",
+"sources": ["../build/sass/xin.scss"],
+"names": [],
+"file": "xin.css"
+}

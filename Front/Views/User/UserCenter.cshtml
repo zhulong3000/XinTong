@@ -1,0 +1,92 @@
+﻿<!-- 
+  author：wind
+  time: 2015-01-05
+  name: 信通中国 微信官网开发项目
+ -->
+
+@{
+    ViewBag.Title = "信通中国-个人中心";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Menu=2;
+}
+
+@* 应用页面的样式 *@
+@section link{  
+  <link rel="stylesheet" href="../../Content/css/user.css">
+}
+
+@* 页面主题内容 *@
+<div class="page main-bg">
+  <div class="header">
+    <div class="pure-g">
+      <div class="pure-u-1-1"><a href="activity_list.html"><img src="../images/ad_xintong_contact.jpg" alt="" class="img-responsive"></a></div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div id="xin_center">
+      <div class="xin-center-content">
+        <div class="center-img-bg"><img src="../images/center.jpg" alt="" class="img-responsive">
+          <div class="center-user-info">
+            <div class="photo"><img src="../images/tou.png" alt="" class="img-responsive"></div>
+            <div class="name">张女士（出借人、借款人）</div>
+            <div class="add"><i class="iconfont icon-dituzuobiao"></i><span class="text">四川-成都</span></div>
+          </div>
+        </div>
+        <div class="pure-g account-value">
+          <div class="pure-u-1-3">
+            <div class="inner"><span class="name">账户总额(元)</span><span class="value">3456</span></div>
+          </div>
+          <div class="pure-u-1-3">
+            <div class="inner border-lr"> <span class="name">冻结总额(元)</span><span class="value">54</span></div>
+          </div>
+          <div class="pure-u-1-3">
+            <div class="inner"><span class="name">可用金额(元)</span><span class="value">153</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="center-item">
+        <div class="center-bar"><a class="link">
+            <label>账户名</label>
+            <div class="field">张女士</div><i class="iconfont icon-xiangyoufan"></i></a></div>
+        <div class="center-bar"><a class="link">
+            <label>我的红包</label>
+            <div class="field">可用1个</div><i class="iconfont icon-xiangyoufan"></i></a></div>
+      </div>
+      <div class="center-item">
+        <div class="center-bar title">借出记录</div>
+        <div class="center-bar"><a class="link">
+            <label>借出金额</label>
+            <div class="field">￥12300</div><i class="iconfont icon-xiangyoufan"></i></a></div>
+        <div class="center-bar"><a class="link">
+            <label>以赚利息</label>
+            <div class="field">￥3.56</div><i class="iconfont icon-xiangyoufan"></i></a></div>
+        <div class="center-bar"><a class="link">
+            <label>待收总额</label>
+            <div class="field">￥3.45</div><i class="iconfont icon-xiangyoufan"></i></a></div>
+      </div>
+      <div class="center-item">
+        <div class="center-bar title">借入记录</div>
+        <div class="center-bar"><a class="link">
+            <label>待借总额</label>
+            <div class="field">￥134.666</div><i class="iconfont icon-xiangyoufan"></i></a></div>
+        <div class="center-bar"><a class="link">
+            <label>待还总额</label>
+            <div class="field">￥3999.56</div><i class="iconfont icon-xiangyoufan"></i></a></div>
+      </div>
+    </div>
+  </div>
+        <div class="footer">
+          <ul class="tool-nav-list pure-g">
+            <li class="nav-item pure-u-1-4"><a href="index.html" class="link"><i class="icon icon-main"></i><span class="text">首页</span></a></li>
+            <li class="nav-item pure-u-1-4"><a href="xin_manage_money.html" class="link"><i class="icon icon-flicai"></i><span class="text">理财</span></a></li>
+            <li class="nav-item pure-u-1-4"><a href="borrow.html" class="link"><i class="icon icon-fjiekuan"></i><span class="text">借款</span></a></li>
+            <li class="nav-item pure-u-1-4"><a href="callto:400-004-2286" class="link"><i class="icon icon-phone"></i><span class="text">电话</span></a></li>
+          </ul>
+        </div>
+</div>
+
+@* 页面主题内容 *@
+@section scripts{
+  
+  <script src="../../Scripts/js/require.js" data-main="../../Scripts/js/user.js"></script>
+}

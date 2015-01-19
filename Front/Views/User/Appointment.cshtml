@@ -1,0 +1,76 @@
+﻿@{
+  Layout = "~/Views/Shared/_Layout_no_head.cshtml";
+  ViewBag.Title = "信通中国-客户预约"; @*  页面标题 *@
+}
+@section featured {}
+@* 页面的样式表连接 *@
+@section link{
+ <link rel="stylesheet" href="../../Content/css/user.css" type="text/css"> 
+ }
+@* 页面的样式表连接 *@
+
+
+@* 页面的主要内容 *@
+<div class="wrapper">
+  <div class="head text-center">
+    在线预约
+  </div>
+  <div class="appointment-content padding-wrapper">
+    <div class="user-list-row padding-label">
+      <label for="name">用户姓名:</label>
+      <div class="field">
+        <input id="name" name="name" type="text" placeholder="请输入真实姓名" class="u-text-input">
+      </div>
+    </div>
+    <div class="user-list-row padding-label">
+      <label>所在城市:</label>
+      <div class="field">
+        <span class="provice">
+          <select class="u-text-input u-input-small" name="" id="">
+            <option value="">北京</option>
+            <option value="">上海</option>
+            <option value="">广州</option>
+          </select>
+         <!--  <input id="name" name="name" type="text" placeholder="" class="u-text-input u-input-small"> -->
+          省
+        </span>
+        <span class="city">
+          <select class="u-text-input u-input-small" name="" id="">
+            <option value="">北京</option>
+            <option value="">上海</option>
+            <option value="">广州</option>
+          </select>
+          <!-- <input id="name" name="name" type="text" placeholder="" class="u-text-input u-input-small"> -->
+          市
+        </span>
+      </div>
+    </div>
+    <div class="user-list-row padding-label">
+      <label for="phone-number">手机号码:</label>
+      <div class="field">
+        <input id="name" name="name" type="text" placeholder="请输入手机号码" class="u-text-input">
+      </div>
+    </div>
+
+    <div class="user-list-row padding-label">
+      <label for="">选择产品:</label>
+      <div class="field">
+        <input id="name" name="name" type="radio" class="u-radio-input">
+        <span class="text" id="app_type_name" for="">精英借</span>
+      </div>
+    </div>
+
+    <a id="submit_apply" href="#" class="btn btn-block btn-active-style">提交申请</a>
+  </div>
+</div>
+
+@* 页面的主要内容 *@
+
+      
+
+@* 页面的脚本文件 *@
+@section scripts{
+  <script src="../../Scripts/js/require.js" data-main="../../Scripts/js/Appointment.js"></script>
+ }
+@* 页面的脚本文件 *@
+

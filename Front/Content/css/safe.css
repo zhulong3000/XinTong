@@ -1,0 +1,108 @@
+/* index */
+/* -------------------------------------------------------------
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+
+------------------------------------------------------------- */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+.bd-content-list:before, .bd-content-list:after {
+  content: " ";
+  display: table;
+}
+.bd-content-list:after {
+  clear: both;
+}
+
+.safe-head {
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-size: 0.9rem;
+  background: #a98667;
+  color: #fff;
+  text-align: center;
+}
+
+.safe-content {
+  position: relative;
+}
+
+.bd-content-list {
+  padding: 0.75rem;
+  border-top: 1px solid #a89e85;
+  -moz-box-shadow: 0 2px 4px #dddbcf;
+  -webkit-box-shadow: 0 2px 4px #dddbcf;
+  box-shadow: 0 2px 4px #dddbcf;
+}
+.bd-content-list label.icon {
+  display: block;
+  float: left;
+  width: 2rem;
+}
+.bd-content-list .text {
+  display: block;
+  margin-left: 2rem;
+}
+.bd-content-list .iconfont {
+  color: #75391d;
+}
+.bd-content-list:nth-child(2n+1) {
+  background: #fff;
+}
+
+.bd-content-title {
+  font-size: 0.8rem;
+  color: #75391d;
+  font-weight: 500;
+  line-height: 2;
+  margin: 0;
+}
+
+.bd-content-text {
+  font-size: 0.7rem;
+  color: #8e8a83;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/*# sourceMappingURL=safe.css.map */

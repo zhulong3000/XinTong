@@ -1,0 +1,44 @@
+﻿<!-- 
+  author：wind
+  time: 2015-01-05
+  name: 信通中国 微信官网开发项目
+ -->
+
+
+@{
+    ViewBag.Title = "信通中国-借款列表";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Menu=2;
+}
+
+@* 应用页面的样式 *@
+@section link{
+  <link rel="stylesheet" href="../../Content/css/borrow.css">
+}
+
+
+@* page 代码的主体内容 *@
+  <div class="wrapper">
+    <div id="borrow_list">
+    @foreach(var item in ViewBag.BorrowList_data){
+      <div class="borrow-list-item">
+        <a href="./Details?id=@item.ID" class="link">
+          <h3 class="name">@item.Name</h3>
+          <p class="item-simple-intr">@item.SimpleDesc</p>
+          <span class="interest">
+            <span class="text">利息率</span> <i class="dot">16%</i>
+          </span>
+        </a>
+      </div>
+    }
+    </div>
+  </div>
+
+@* page 代码的主体内容 *@
+
+@section scripts{
+  
+  <script src="../../Scripts/js/require.js" data-main="../../Scripts/js/xin_borrow_list.js"></script>
+
+
+}

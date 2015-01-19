@@ -1,0 +1,152 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>理财产品管理</title>@*添加Jquery EasyUI的样式*@
+    <link href="@Url.Content("~/Content/JqueryEasyUI/themes/default/easyui.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/JqueryEasyUI/themes/icon.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
+    @*添加Jquery，EasyUI和easyUI的语言包的JS文件*@
+    <script src="@Url.Content("~/Content/JqueryEasyUI/jquery-1.8.0.min.js")"></script>
+    <script src="@Url.Content("~/Content/JqueryEasyUI/jquery.easyui.min.js")"></script>
+    <script src="@Url.Content("~/Content/JqueryEasyUI/locale/easyui-lang-zh_CN.js")"></script>
+    @*日期格式的引用*@
+    <script src="@Url.Content("~/Content/datapattern.js")"></script>
+    @*实现对EasyUI的DataGird控件操作的JS代码*@
+    <script src="../../Content/common/dataGrid.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            DataGrid.datagridId = "#dg";
+            DataGrid.title = "借款产品管理";
+            DataGrid.formDialogId = "#DivAdd";
+            DataGrid.formId = "#ff";
+            DataGrid.formSubmitBtn = "#submit";
+            DataGrid.formResettBtn = "#reset";
+            DataGrid.formId = "#ff";
+            DataGrid.formAddDialogName = "添加借款产品";
+            DataGrid.formEditDialogName = "编辑借款产品";
+
+            DataGrid.queryUrl = "/FinanceProduct/GetList";
+            DataGrid.createUrl = "/FinanceProduct/Create";
+            DataGrid.editUrl = "/FinanceProduct/Edit?ID=";
+            DataGrid.deleteUrl = "/FinanceProduct/Delete?ID=";
+            DataGrid.columns = [[
+                        { field: 'ck', checkbox: true },
+	                    { title: '主键', field: 'ID', sortable: true },
+                        { title: '产品名称', field: 'Name', sortable: true },
+                        { title: '年收益', field: 'AnnualEarnings', sortable: true },
+                        { title: '最低限额', field: 'MinMoney', sortable: true },
+                        { title: '封闭期限', field: 'LimitMinTime', sortable: true },
+                        { title: '模式特点', field: 'ModeFeature', width: 140, sortable: true },
+                        { title: '适合人群', field: 'SuitCrowd', width: 140, sortable: true },
+                        { title: '投资案例', field: 'Case', width: 140, sortable: true },
+                        { title: '简略描述', field: 'SimpleDesc', width: 140, sortable: true }
+            ]];
+            DataGrid.init();
+        });
+    </script>
+</head>
+<body>
+    <table id="dg">
+    </table>
+    <!--------------------------添加信息的弹出层---------------------------->
+    <div id="DivAdd" class="easyui-dialog" style="width: 580px; top: 5px" closed="true"
+        resizable="true" modal="true" buttons="#dlg-buttons">
+        <form id="ff" method="post" novalidate="novalidate">
+        <fieldset>
+            <input type="hidden" id="ID" name="ID" />
+            <table id="tblAdd">
+                <tr>
+                    <td>
+                        <label for="Name">
+                            名称：</label>
+                    </td>
+                    <td>
+                        <input class="easyui-validatebox" type="text" id="Name" name="Name" data-options="required:true,validType:'length[1,32]'"
+                            style="width: 300px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="AnnualEarnings">
+                            年收益：</label>
+                    </td>
+                    <td>
+                        <input class="easyui-validatebox" type="text" id="AnnualEarnings" name="AnnualEarnings"
+                            data-options="required:true,validType:'length[1,200]'" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="MinMoney">
+                            最低限额：</label>
+                    </td>
+                    <td>
+                        <input class="easyui-textbox" type="text" id="MinMoney" name="MinMoney" data-options="multiline:true,required:true,validType:'length[1,200]'"
+                            style="height: 60px; width: 300px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="LimitMinTime">
+                            封闭期限：</label>
+                    </td>
+                    <td>
+                        <input class="easyui-textbox" type="text" id="LimitMinTime" name="LimitMinTime" data-options="multiline:true,required:true,validType:'length[1,200]'"
+                            style="height: 60px; width: 300px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ModeFeature">
+                            模式特点：</label>
+                    </td>
+                    <td>
+                        <textarea class="easyui-textbox" type="text" id="ModeFeature" name="ModeFeature"
+                            data-options="multiline:true,required:true,validType:'length[1,200]'" style="height: 60px;
+                            width: 300px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="SimpleDesc">
+                            简略描述：</label>
+                    </td>
+                    <td>
+                        <textarea class="easyui-textbox" type="text" id="SimpleDesc" name="SimpleDesc" data-options="multiline:true,required:true,validType:'length[1,200]'"
+                            style="height: 60px; width: 300px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="SuitCrowd">
+                            适合人群：</label>
+                    </td>
+                    <td>
+                        <textarea class="easyui-textbox" type="text" id="SuitCrowd" name="SuitCrowd" data-options="multiline:true,required:true,validType:'length[1,255]'"
+                            style="height: 60px; width: 300px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Case">
+                            投资案例：</label>
+                    </td>
+                    <td>
+                        <textarea class="easyui-textbox" type="text" id="Case" name="Case" data-options="multiline:true,required:true,validType:'length[1,255]'"
+                            style="height: 60px; width: 300px;"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div style="text-align: center; padding: 5px">
+                <a href="javascript:void(0)" class="easyui-linkbutton" id="submit">提交</a> <a href="javascript:void(0)"
+                    class="easyui-linkbutton" id="reset">清空</a>
+            </div>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>

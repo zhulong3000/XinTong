@@ -1,0 +1,162 @@
+﻿@{
+    ViewBag.Title = "信通中国-理财详情";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Menu = 1;
+}
+
+@section link{
+<link rel="stylesheet" href="../../Content/css/owl.carousel.css">
+<link rel="stylesheet" href="../../Content/css/owl.theme.css">
+<link rel="stylesheet" href="../../Content/css/manage.css">
+}
+
+@* data 数据 *@
+
+<div class="wrapper">
+  <div id="manage_detail" data-id="">
+    <div class="md-earnings">
+      <b>@ViewBag.data.Name</b>
+      预计年化收益 <i>@ViewBag.data.AnnualEarnings%</i>
+    </div>
+    <div class="md-simple-intr bg-white">
+      <div class="md-sim-intr-item">
+        <label class="theme01">模式特点</label>
+        <span class="text">@ViewBag.data.ModeFeature</span>
+      </div>
+      <div class="md-sim-intr-item">
+        <label class="theme02">最低限额</label>
+        <span class="text">@ViewBag.data.MinMoney</span>
+      </div>
+      <div class="md-sim-intr-item">
+        <label class="theme03">封闭期限</label>
+        <span class="text">
+        @ViewBag.data.EntityState
+        年（非固定期限，最低一年）</span>
+      </div>
+    </div>
+    <div class="md-intr-item">
+      <h3 class="md-intr-item-title">
+        <span>适用人群</span>
+      </h3>
+      <p class="md-intr-item-text">@ViewBag.data.SuitCrowd</p>
+    </div>
+    <div class="md-intr-item bg-white">
+      <h3 class="md-intr-item-title">
+        <span>投资案例</span>
+      </h3>
+      <p class="md-intr-item-text">
+        @ViewBag.data.Case
+      </p>
+      <div class="md-intr-item-table">
+        <table border="1">
+          <thead>
+            <tr>
+              <td>投资期限</td>
+              <td>投资本金</td>
+              <td>预期本息收益</td>
+              <td>增长比例</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1年</td>
+              <td>￥1000</td>
+              <td>￥22333</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>2年</td>
+              <td>￥1000</td>
+              <td>￥22333</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>3年</td>
+              <td>￥1000</td>
+              <td>￥22333</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>1年</td>
+              <td>￥1000</td>
+              <td>￥22333</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>2年</td>
+              <td>￥1000</td>
+              <td>￥22333</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <td>3年</td>
+              <td>￥1000</td>
+              <td>￥22333</td>
+              <td>12%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="button-row bg-white">
+      <a href="../User/Appointment?type=manager&id=2" class="btn btn-block btn-active-style">在线预约</a>
+    </div>
+    <div class="others-products">
+      <h3 class="op-title">更多产品推荐</h3>
+      <div class="box">
+        <div class="p-control">
+          <a id="prev" class="iconfont icon-xiangyou rotate180"></a>
+          <a id="next" class="iconfont icon-xiangyou"></a>
+        </div>
+        <div id="others_products_list" class="p-list">
+          <div class="item">
+            <div class="p-item">
+              <span class="name">季丰</span>
+              <span class="earnings">年化收益 8%</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="p-item">
+              <span class="name">季丰</span>
+              <span class="earnings">年化收益 8%</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="p-item">
+              <span class="name">季丰</span>
+              <span class="earnings">年化收益 8%</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="p-item">
+              <span class="name">季丰</span>
+              <span class="earnings">年化收益 8%</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="p-item">
+              <span class="name">季丰</span>
+              <span class="earnings">年化收益 8%</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="p-item">
+              <span class="name">季丰</span>
+              <span class="earnings">年化收益 8%</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="p-item">
+              <span class="name">季丰</span>
+              <span class="earnings">年化收益 8%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+@section scripts{
+<script src="../Scripts/js/require.js" data-main="../Scripts/js/manage_detail.js"></script>
+}

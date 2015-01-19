@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "信通中国-我要理财";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Menu = 1;
+}
+
+@section link{
+  <link rel="stylesheet" href="../../Content/css/borrow.css">
+}
+<div class="wrapper">
+  <div id="borrow_list">
+    <div class="borrow-list-item">
+      <a href="./Details" class="link">
+        <h3 class="name Name"></h3>
+        <p class="item-simple-intr SimpleDesc"></p>
+        <span class="year-earnings">
+          <span class="text">年化收益</span><i class="dot"><b class="AnnualEarnings"></b>%</i>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+@section scripts{
+<script src="../Scripts/js/require.js" data-main="../Scripts/js/manage_list.js"></script>
+}

@@ -1,0 +1,137 @@
+/* index */
+/* -------------------------------------------------------------
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+
+------------------------------------------------------------- */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+.borrow-list-item {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.borrow-list-item {
+  padding: 0.7rem 3.5rem 0.7rem 1rem;
+  border-top: 1px solid #a89e85;
+}
+.borrow-list-item .link {
+  display: block;
+  color: #75391d;
+}
+.borrow-list-item .link .name {
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 0.1rem;
+  margin: 0;
+}
+.borrow-list-item .link .item-simple-intr {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  height: 1rem;
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  margin: 0;
+}
+.borrow-list-item .interest {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.35rem;
+  width: 3rem;
+  height: 3rem;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.6rem 0;
+  border: 0.2rem solid #008fc1;
+  text-align: center;
+}
+.borrow-list-item .interest .text {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #8e8a83;
+}
+.borrow-list-item .interest .dot {
+  font-style: normal;
+  font-size: 0.6rem;
+  color: #75391d;
+}
+.borrow-list-item .year-earnings {
+  position: absolute;
+  right: 0.5rem;
+  top: 0rem;
+  padding: 0.6rem 0;
+  text-align: center;
+}
+.borrow-list-item .year-earnings .text {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #8e8a83;
+  line-height: 1.5;
+}
+.borrow-list-item .year-earnings .dot {
+  display: inline-block;
+  font-style: normal;
+  font-size: 0.7rem;
+  color: #75391d;
+  font-weight: 500;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.1rem;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.2rem solid #008fc1;
+}
+
+/*# sourceMappingURL=borrow.css.map */

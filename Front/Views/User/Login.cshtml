@@ -1,0 +1,50 @@
+﻿@{
+  ViewBag.Title = "信通中国-信通动态"; @* 页面标题 *@
+}
+@section featured {
+}
+@* 页面的样式表连接 *@
+@section link{
+<link rel="stylesheet" href="../../Content/css/user.css" type="text/css">
+}
+@* 页面的样式表连接 *@
+<div class="wrapper">
+  <div id="login" class="padding-wrapper">
+    <div class="login-input-wrapper">
+      <form action="login.php">
+        <div id="login_error_info" class="input-error-info"></div>
+        <div class="input-wrapper-login">
+          <div class="user-list-row p-l bb p-r">
+            <label> 
+            <i class="icon icon-member"></i>
+            </label>
+            <input id="name" name="name" type="text" placeholder="请输入用户名" class="u-input name"></div>
+          <div class="user-list-row p-l p-r">
+            <label> <i class="icon icon-password"></i>
+            </label>
+            <input id="password" name="password" type="password" placeholder="6-16位字符" class="u-input name"></div>
+        </div>
+        <div class="user-list-row m-tb">
+          <input id="rememberMe" class="agree-checkbox" type="checkbox">
+          <i class="icon icon-checkbox"></i>
+          <label class="normal">记住密码</label>
+        </div>
+      </form>
+      <div class="user-list-row">
+        <input id="login_submit" type="submit" value="登录" class="btn-block btn btn-active-style"></div>
+      <div class="pure-g other-operate">
+        <div class="pure-u-1-2">
+<!--           <a href="#" class="link">忘记密码?</a> -->
+        </div>
+        <div class="pure-u-1-2 text-right">
+          <a href="./Register" class="link">新用户注册</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@* 页面的脚本文件 *@
+@section scripts{
+<script src="../../Scripts/js/require.js" data-main="../../Scripts/js/user.js"></script>
+}
+@* 页面的脚本文件 *@
